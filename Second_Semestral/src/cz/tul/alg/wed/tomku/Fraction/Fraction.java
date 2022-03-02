@@ -20,9 +20,9 @@ public class Fraction {
     public Fraction(String string) {
         String test = "(\\d*)[?:\\/\\s]?(?:\\d*)?";
         String test2 = "(\\d*)[\\/\\s](\\d*)";
-        Pattern patt = Pattern.compile(test,Pattern.CASE_INSENSITIVE | Pattern.DOTALL);
+        Pattern patt = Pattern.compile(test, Pattern.CASE_INSENSITIVE | Pattern.DOTALL);
         Matcher matc = patt.matcher(string);
-        Pattern patt2 = Pattern.compile(test2,Pattern.CASE_INSENSITIVE | Pattern.DOTALL);
+        Pattern patt2 = Pattern.compile(test2, Pattern.CASE_INSENSITIVE | Pattern.DOTALL);
         Matcher matc2 = patt2.matcher(string);
 
         if (matc2.find()) {
@@ -44,12 +44,12 @@ public class Fraction {
     }
 
     public Integer getJmenovatel() {
-        if(jmenovatel == null) return 1;
+        if (jmenovatel == null) return 1;
         return jmenovatel;
     }
 
     public double hodnota() {
-        if(jmenovatel == null) {
+        if (jmenovatel == null) {
             return citatel;
         } else {
             return (double) citatel / jmenovatel;
@@ -68,10 +68,10 @@ public class Fraction {
 
     @Override
     public String toString() {
-        if(jmenovatel == citatel) {
-            double temp = (double) citatel/jmenovatel;
+        if (jmenovatel == citatel) {
+            double temp = (double) citatel / jmenovatel;
             return String.format("%s", (int) temp);
-        } else if(jmenovatel == null) {
+        } else if (jmenovatel == null) {
             return String.format("%s", citatel);
         } else {
             return String.format("%s/%s", citatel, jmenovatel);
