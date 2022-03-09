@@ -22,7 +22,7 @@ public class MoneyBox {
     }
 
     public int sumOfMoneyBox() {
-        return noOfOnes + (2 * noOfTwos);
+        return this.noOfOnes + (2 * this.noOfTwos);
     }
 
     public void putOneCrown() {
