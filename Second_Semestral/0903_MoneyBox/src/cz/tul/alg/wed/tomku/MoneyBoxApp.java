@@ -4,11 +4,8 @@ public class MoneyBoxApp {
     public static void main(String[] args) {
         MoneyBox Alice = new MoneyBox("Alice" , 5, 20);
         MoneyBox Bob = new MoneyBox("Bob");
-        Bob.putOneCrown();
-        Bob.putOneCrown();
-        Bob.putTwoCrown();
-        Bob.putTwoCrown();
-        Bob.putTwoCrown();
+        Bob.putOneCrown(2);
+        Bob.putTwoCrown(3);
         Bob.putMoney(2, 3);
 
         System.out.format("Alice\t- %s Kč", Alice.sumOfMoneyBox());

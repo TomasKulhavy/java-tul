@@ -26,16 +26,24 @@ public class MoneyBox {
     }
 
     public void putOneCrown() {
-        this.noOfOnes++;
+        putOneCrown(1);
     }
 
     public void putTwoCrown() {
-        this.noOfTwos++;
+        putTwoCrown(1);
+    }
+
+    public void putOneCrown(int count) {
+        this.noOfOnes += count;
+    }
+
+    public void putTwoCrown(int count) {
+        this.noOfTwos += count;
     }
 
     public void putMoney(int ones, int twos) {
-        this.noOfOnes += ones;
-        this.noOfTwos += twos;
+        putOneCrown(ones);
+        putTwoCrown(twos);
     }
 
     public boolean isEnough(int amount) {
