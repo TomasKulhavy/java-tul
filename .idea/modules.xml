@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/First_Semestral/0104_2D/0104_2D.iml" filepath="$PROJECT_DIR$/First_Semestral/0104_2D/0104_2D.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Second_Semestral/0903_MoneyBox/0903_Data.iml" filepath="$PROJECT_DIR$/Second_Semestral/0903_MoneyBox/0903_Data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Second_Semestral/0903_Fraction.iml" filepath="$PROJECT_DIR$/Second_Semestral/0903_Fraction.iml" />
       <module fileurl="file://$PROJECT_DIR$/First_Semestral/1012_Integers/1012_Integers.iml" filepath="$PROJECT_DIR$/First_Semestral/1012_Integers/1012_Integers.iml" />
       <module fileurl="file://$PROJECT_DIR$/First_Semestral/1012_Introduction/1012_Introduction.iml" filepath="$PROJECT_DIR$/First_Semestral/1012_Introduction/1012_Introduction.iml" />
       <module fileurl="file://$PROJECT_DIR$/First_Semestral/1019_RealNumbers/1019_RealNumbers.iml" filepath="$PROJECT_DIR$/First_Semestral/1019_RealNumbers/1019_RealNumbers.iml" />
@@ -16,6 +18,7 @@
       <module fileurl="file://$PROJECT_DIR$/First_Semestral/1130_Metody/1130_Metody.iml" filepath="$PROJECT_DIR$/First_Semestral/1130_Metody/1130_Metody.iml" />
       <module fileurl="file://$PROJECT_DIR$/First_Semestral/1213_George/1213_George.iml" filepath="$PROJECT_DIR$/First_Semestral/1213_George/1213_George.iml" />
       <module fileurl="file://$PROJECT_DIR$/First_Semestral/1214_Matrix/1214_Matrix.iml" filepath="$PROJECT_DIR$/First_Semestral/1214_Matrix/1214_Matrix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Second_Semestral/2302_Fraction/2302_Fraction.iml" filepath="$PROJECT_DIR$/Second_Semestral/2302_Fraction/2302_Fraction.iml" />
       <module fileurl="file://$PROJECT_DIR$/Second_Semestral/2302_OOP.iml" filepath="$PROJECT_DIR$/Second_Semestral/2302_OOP.iml" />
       <module fileurl="file://$PROJECT_DIR$/First_Semestral/ChristmasPresent/ChristmasPresent.iml" filepath="$PROJECT_DIR$/First_Semestral/ChristmasPresent/ChristmasPresent.iml" />
       <module fileurl="file://$PROJECT_DIR$/First_Semestral/First_Semestral.iml" filepath="$PROJECT_DIR$/First_Semestral/First_Semestral.iml" />

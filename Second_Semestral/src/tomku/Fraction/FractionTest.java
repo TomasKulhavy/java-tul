@@ -1,4 +1,4 @@
-package cz.tul.alg.wed.tomku.Fraction;
+package tomku.Fraction;
 
 public class FractionTest {
     public static void main(String[] args) {

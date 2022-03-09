@@ -1,4 +1,4 @@
-package cz.tul.alg.wed.tomku;
+package tomku;
 
 public class Point {
     private double x;

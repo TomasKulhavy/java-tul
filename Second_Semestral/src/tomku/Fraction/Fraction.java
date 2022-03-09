@@ -1,4 +1,4 @@
-package cz.tul.alg.wed.tomku.Fraction;
+package tomku.Fraction;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
