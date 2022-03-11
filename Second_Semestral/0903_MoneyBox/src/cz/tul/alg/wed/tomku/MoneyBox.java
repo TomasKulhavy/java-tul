@@ -50,6 +50,11 @@ public class MoneyBox {
         return sumOfMoneyBox() >= amount;
     }
 
+    // TODO
+    public void giveMoney() {
+
+    }
+
     @Override
     public String toString() {
         return String.format("%s má v pokladničce\t- %sKč | %sx 1Kč - %sx 2Kč.", this.nameOfOwner, sumOfMoneyBox(), this.noOfOnes, this.noOfTwos);

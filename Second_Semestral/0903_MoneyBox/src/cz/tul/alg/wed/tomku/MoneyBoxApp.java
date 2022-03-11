@@ -27,5 +27,8 @@ public class MoneyBoxApp {
                         ? "Oba si mohou koupit hamburger" : "Nikdo si nemůže koupit hamburger";
 
         System.out.println(result);
+
+        Bob.changeName("Alice");
+        System.out.println(Bob);
     }
 }
