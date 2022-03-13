@@ -23,8 +23,29 @@ public class BusApp {
             vystoupitPax = sc.nextInt();
             nastoupitPax = sc.nextInt();
 
-            dmplj.vystoupit(vystoupitPax);
-            dmplj.nastoupit(nastoupitPax);
+            System.out.println();
+
+            if (vystoupitPax > dmplj.getPax()) {
+                int temp = vystoupitPax - dmplj.getPax();
+                vystoupitPax -= temp;
+                dmplj.vystoupit(vystoupitPax);
+                System.out.format("Vystoupit mohlo jen %s lidí.", vystoupitPax);
+            } else {
+                dmplj.vystoupit(vystoupitPax);
+            }
+
+            System.out.println();
+
+            if (nastoupitPax > (dmplj.getSeats() - dmplj.getPax())) {
+                int temp = nastoupitPax - (dmplj.getSeats() - dmplj.getPax());
+                nastoupitPax -= temp;
+                dmplj.nastoupit(nastoupitPax);
+                System.out.format("Nastoupit mohlo jen %s lidí.", nastoupitPax);
+            } else {
+                dmplj.nastoupit(nastoupitPax);
+            }
+
+            System.out.println();
         }
     }
 }

@@ -34,8 +34,8 @@ public class Bus {
     }
 
     public void vystoupit(int pax) {
-        if (pax > this.noOfSeats) {
-            int temp = pax - noOfSeats;
+        if (pax > this.noOfPax) {
+            int temp = pax - noOfPax;
             pax -= temp;
             this.noOfPax -= pax;
         } else {
