@@ -23,7 +23,7 @@ public class Polynom {
     }
 
     // Tovární metody
-    public static Polynom getInstanceFromReverted(int... a) {
+    public static Polynom getInstanceToReverte(int... a) {
         int[] b = new int[a.length];
         for (int i = a.length - 1; i >= 0 ; i--) {
             b[a.length - i - 1] = a[i];
@@ -32,12 +32,12 @@ public class Polynom {
         return new Polynom(b);
     }
 
-    public static Polynom getInstanceFromNonReverted(int... a) {
+    public static Polynom getInstanceToNonReverte(int... a) {
         return new Polynom(a);
     }
 
     public static Polynom getInstanceFromRevertedArray(int[] a) {
-        return getInstanceFromReverted(a);
+        return getInstanceToReverte(a);
     }
 
     public static Polynom getInstanceFromNonRevertedArray(int[] a) {
@@ -70,12 +70,17 @@ public class Polynom {
     }
 
     public static void main(String[] args) {
-        Polynom p0 = Polynom.getInstanceFromReverted(2, 3, 4, 5);
-        Polynom p1 = Polynom.getInstanceFromNonReverted(-2, 3, 4, 5);
+        Polynom p0 = Polynom.getInstanceToReverte(2, 10, 4, 5);
+        Polynom p1 = Polynom.getInstanceToNonReverte(-2, 3, 4, 5);
 
         System.out.println(p0);
         System.out.println(p1);
 
         System.out.println(p0.derivation());
+
+        System.out.println();
+        System.out.println("Součet 2 polynomů: ");
+        System.out.println(PolynomTools.sum(p0, p1));;
+        System.out.println();
     }
 }
