@@ -5,6 +5,8 @@ import java.util.Arrays;
 public class Polynom {
     private int[] polynom;
 
+
+    // Konstruktor
     public Polynom(int[] pole) {
         polynom = Arrays.copyOf(pole, pole.length);
     }
@@ -20,6 +22,7 @@ public class Polynom {
         polynom[1] = n2;
     }
 
+    // Tovární metody
     public static Polynom getInstanceFromReverted(int... a) {
         int[] b = new int[a.length];
         for (int i = a.length - 1; i >= 0 ; i--) {
@@ -41,22 +44,38 @@ public class Polynom {
         return new Polynom(a);
     }
 
+    public int[] getPolynom() {
+        return Arrays.copyOf(polynom, polynom.length);
+    }
+
+    public int getKoef(int exponent) {
+        return polynom[exponent];
+    }
+
+    public Polynom derivation() {
+        int[] temp = new int[polynom .length- 1];
+        for (int i = 0; i < temp.length; i++) {
+            temp[i] = polynom[i + 1] * (i + 1);
+        }
+        return new Polynom(temp);
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder("");
         for (int i = 0; i < polynom.length; i++) {
-            sb.append(String.format(" %sx^%s", (polynom[i] > 0 && i != 0) ? "+" + polynom[i] : polynom[i], polynom.length - i - 1));
+            sb.append(String.format(" %sx^%s", (polynom[i] > 0) ? (i == 0) ? polynom[i] : "+ " + polynom[i] : "- " + Math.abs(polynom[i]), polynom.length - i - 1));
         }
         return sb.toString();
     }
 
     public static void main(String[] args) {
         Polynom p0 = Polynom.getInstanceFromReverted(2, 3, 4, 5);
-        Polynom p1 = Polynom.getInstanceFromNonReverted(2, 3, 4, 5);
-        Polynom p2 = Polynom.getInstanceFromReverted(2, 3, 4, 5);
-        Polynom p3 = Polynom.getInstanceFromReverted(2, 3, 4, 5);
+        Polynom p1 = Polynom.getInstanceFromNonReverted(-2, 3, 4, 5);
 
         System.out.println(p0);
         System.out.println(p1);
+
+        System.out.println(p0.derivation());
     }
 }
