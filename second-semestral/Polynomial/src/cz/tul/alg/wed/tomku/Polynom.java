@@ -48,6 +48,10 @@ public class Polynom {
         return Arrays.copyOf(polynom, polynom.length);
     }
 
+    public int getLenght() {
+        return polynom.length;
+    }
+
     public int getKoef(int exponent) {
         return polynom[exponent];
     }

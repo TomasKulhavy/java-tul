@@ -4,11 +4,11 @@ import java.util.Arrays;
 
 public class PolynomTools {
     public static Polynom sum(Polynom polynom, Polynom polynom2) {
-        int size = (polynom.getPolynom().length > polynom2.getPolynom().length ) ? polynom.getPolynom().length  : polynom2.getPolynom().length ;
+        int size = (polynom.getLenght() > polynom2.getLenght() ) ? polynom.getLenght()  : polynom2.getLenght() ;
         int[] sum = new int[size];
-        sum = Arrays.copyOf(polynom.getPolynom(), polynom.getPolynom().length);
+        sum = Arrays.copyOf(polynom.getPolynom(), polynom.getLenght());
 
-        for (int i = 0; i < polynom2.getPolynom().length; i++) {
+        for (int i = 0; i < polynom2.getLenght(); i++) {
             sum[i] += polynom2.getPolynom()[i];
         }
 
