@@ -22,8 +22,8 @@ public class Polynom {
 
     public static Polynom getInstanceFromReverted(int... a) {
         int[] b = new int[a.length];
-        for (int i = a.length; i > 0 ; i--) {
-            b[i] = a[a.length - i - 1];
+        for (int i = a.length - 1; i >= 0 ; i--) {
+            b[a.length - i - 1] = a[i];
         }
 
         return new Polynom(b);
@@ -51,12 +51,12 @@ public class Polynom {
     }
 
     public static void main(String[] args) {
-        int[] intArray = new int[]{ 1,-2,3,4,5,6,7,8,9,10 };
+        Polynom p0 = Polynom.getInstanceFromReverted(2, 3, 4, 5);
+        Polynom p1 = Polynom.getInstanceFromNonReverted(2, 3, 4, 5);
+        Polynom p2 = Polynom.getInstanceFromReverted(2, 3, 4, 5);
+        Polynom p3 = Polynom.getInstanceFromReverted(2, 3, 4, 5);
 
-        Polynom polynom = new Polynom(2, 3);
-        Polynom polynomArray = new Polynom(intArray);
-
-        System.out.println(polynom);
-        System.out.println(polynomArray);
+        System.out.println(p0);
+        System.out.println(p1);
     }
 }
