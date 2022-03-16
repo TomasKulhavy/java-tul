@@ -57,9 +57,12 @@ public class Bus {
         this.noOfPax = 0;
     }
 
-    public void changeParams(String company, int numberOfRoute) {
-        this.company = company;
+    public void setNumberOfRoute(int numberOfRoute) {
         this.numberOfRoute = numberOfRoute;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
     }
 
     @Override
