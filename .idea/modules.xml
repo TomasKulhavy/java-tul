@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/first-semestral/0104_2D/0104_2D.iml" filepath="$PROJECT_DIR$/first-semestral/0104_2D/0104_2D.iml" />
-      <module fileurl="file://$PROJECT_DIR$/second-semestral/0903_MoneyBox/0903_Data.iml" filepath="$PROJECT_DIR$/second-semestral/0903_MoneyBox/0903_Data.iml" />
       <module fileurl="file://$PROJECT_DIR$/second-semestral/0903_Fraction.iml" filepath="$PROJECT_DIR$/second-semestral/0903_Fraction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/second-semestral/0903_MoneyBox/0903_MoneyBox.iml" filepath="$PROJECT_DIR$/second-semestral/0903_MoneyBox/0903_MoneyBox.iml" />
       <module fileurl="file://$PROJECT_DIR$/first-semestral/1012_Integers/1012_Integers.iml" filepath="$PROJECT_DIR$/first-semestral/1012_Integers/1012_Integers.iml" />
       <module fileurl="file://$PROJECT_DIR$/first-semestral/1012_Introduction/1012_Introduction.iml" filepath="$PROJECT_DIR$/first-semestral/1012_Introduction/1012_Introduction.iml" />
       <module fileurl="file://$PROJECT_DIR$/first-semestral/1019_RealNumbers/1019_RealNumbers.iml" filepath="$PROJECT_DIR$/first-semestral/1019_RealNumbers/1019_RealNumbers.iml" />
@@ -18,7 +18,7 @@
       <module fileurl="file://$PROJECT_DIR$/first-semestral/1130_Metody/1130_Metody.iml" filepath="$PROJECT_DIR$/first-semestral/1130_Metody/1130_Metody.iml" />
       <module fileurl="file://$PROJECT_DIR$/first-semestral/1213_George/1213_George.iml" filepath="$PROJECT_DIR$/first-semestral/1213_George/1213_George.iml" />
       <module fileurl="file://$PROJECT_DIR$/first-semestral/1214_Matrix/1214_Matrix.iml" filepath="$PROJECT_DIR$/first-semestral/1214_Matrix/1214_Matrix.iml" />
-      <module fileurl="file://$PROJECT_DIR$/second-semestral/Polynomial/1603_Polynomial.iml" filepath="$PROJECT_DIR$/second-semestral/Polynomial/1603_Polynomial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/second-semestral/1603_Polynomial/1603_Polynomial.iml" filepath="$PROJECT_DIR$/second-semestral/1603_Polynomial/1603_Polynomial.iml" />
       <module fileurl="file://$PROJECT_DIR$/second-semestral/2302_Fraction/2302_Fraction.iml" filepath="$PROJECT_DIR$/second-semestral/2302_Fraction/2302_Fraction.iml" />
       <module fileurl="file://$PROJECT_DIR$/second-semestral/2302_OOP.iml" filepath="$PROJECT_DIR$/second-semestral/2302_OOP.iml" />
       <module fileurl="file://$PROJECT_DIR$/second-semestral/Bus/Bus.iml" filepath="$PROJECT_DIR$/second-semestral/Bus/Bus.iml" />
@@ -29,7 +29,11 @@
       <module fileurl="file://$PROJECT_DIR$/first-semestral/MyLibrary/MyLibrary.iml" filepath="$PROJECT_DIR$/first-semestral/MyLibrary/MyLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/first-semestral/Samostatne_ulohy/Samostatne_ulohy.iml" filepath="$PROJECT_DIR$/first-semestral/Samostatne_ulohy/Samostatne_ulohy.iml" />
       <module fileurl="file://$PROJECT_DIR$/second-semestral/Second_Semestral.iml" filepath="$PROJECT_DIR$/second-semestral/Second_Semestral.iml" />
+      <module fileurl="file://$PROJECT_DIR$/second-semestral/competition/competition.iml" filepath="$PROJECT_DIR$/second-semestral/competition/competition.iml" />
+      <module fileurl="file://$PROJECT_DIR$/second-semestral/eleven-game/eleven-game.iml" filepath="$PROJECT_DIR$/second-semestral/eleven-game/eleven-game.iml" />
       <module fileurl="file://$PROJECT_DIR$/first-semestral/first-semestral.iml" filepath="$PROJECT_DIR$/first-semestral/first-semestral.iml" />
+      <module fileurl="file://$PROJECT_DIR$/second-semestral/inheritance/inheritance.iml" filepath="$PROJECT_DIR$/second-semestral/inheritance/inheritance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/second-semestral/shapes.iml" filepath="$PROJECT_DIR$/second-semestral/shapes.iml" />
     </modules>
   </component>
 </project>
