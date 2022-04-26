@@ -9,7 +9,7 @@ import java.util.List;
  */
 public interface GameInterface {
     /**
-     * Name of the game such as "Eleven gamet"
+     * Name of the game such as "Eleven game"
      * @return name of the game
      */
     public String getName();
@@ -61,4 +61,10 @@ public interface GameInterface {
      * @return true if all cards were played successfully, false otherwise
      */
     public boolean isWon();
+
+    /**
+     * Shuffle deck
+     * @return
+     */
+    public void shuffleDeck();
 }

@@ -26,6 +26,7 @@ public class ConsoleUI {
 
     private void playGame(){
         System.out.println("***************** "+ game.getName() + " ********************");
+        game.shuffleDeck();
         displayDeck();
         displayCards();
         while(game.anotherPlayIsPossible()){
@@ -59,8 +60,8 @@ public class ConsoleUI {
 
     private List<Integer> toInt(String[] selectedCards) {
         List<Integer> iSelectedCards = new ArrayList();
-        for (int i = 0; i < selectedCards.length; i++) {
-            iSelectedCards.add(Integer.parseInt(selectedCards[i])-1);
+        for (String selectedCard : selectedCards) {
+            iSelectedCards.add(Integer.parseInt(selectedCard) - 1);
         }
         return iSelectedCards;
     }
