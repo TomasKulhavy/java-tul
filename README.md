@@ -2,6 +2,21 @@
 
 Programy vypracované během cvičení na předmětu ALG1/ALG2
 
+### Kompozice
+- Vhodné dávat přednost před dědičností
+- Jiný objekt jako atribut v objektu (např. String ve třídě, Adresa v Osoba)
+### Dědičnost
+- Vazba is a
+- Circle is a Shape
+- extends
+ - Můžeme dědit pouze z jedné třídy
+### Implementace
+- Vazba implements
+- Circle implements Computable
+- implements
+- Můžeme implementovat více rozhraní
+
+
 ## Fraction - toString() @Override example
 
 ``` java 
