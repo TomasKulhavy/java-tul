@@ -64,7 +64,6 @@ public interface GameInterface {
 
     /**
      * Shuffle deck
-     * @return
      */
     public void shuffleDeck();
 }

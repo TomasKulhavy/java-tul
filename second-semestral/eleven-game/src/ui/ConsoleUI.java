@@ -19,7 +19,7 @@ public class ConsoleUI {
         while (nextGame){
             game = new Game(); //connect UI with the game logic
             playGame();
-            System.out.println("Chceš hrát znova? a/n");
+            System.out.println("Chces hrat znova? a/n");
             nextGame = sc.next().equalsIgnoreCase("a");
         }
     }
@@ -30,7 +30,7 @@ public class ConsoleUI {
         displayDeck();
         displayCards();
         while(game.anotherPlayIsPossible()){
-            System.out.println("Vyběr karty:");
+            System.out.println("Vyber karty:");
             String[] selectedCards = sc.nextLine().split(" +"); //separator is one or more spaces
             List<Integer> iSelectedCards = toInt(selectedCards); //changes String positions to int indexes
             if (game.playAndReplace(iSelectedCards)){
@@ -43,7 +43,7 @@ public class ConsoleUI {
         if (game.isWon()){
             System.out.println("Gratuluju!");
         } else {
-            System.out.println("Nelze hrát");
+            System.out.println("Nelze hrat");
         }
     }
 

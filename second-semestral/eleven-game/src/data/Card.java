@@ -5,7 +5,7 @@ public class Card {
     private String value;
     private int nPoint;
 
-    public Card(String symbol, String value, int nPoint) {
+    public Card(String value, String symbol, int nPoint) {
         this.symbol = symbol;
         this.value = value;
         this.nPoint = nPoint;
