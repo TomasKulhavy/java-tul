@@ -37,7 +37,7 @@ public class ConsoleUI {
                 displayDeck();
                 displayCards();
             } else {
-                System.out.println("Nevalidní tah");
+                System.out.println("Nevalidni tah");
             }
         }
         if (game.isWon()){
