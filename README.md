@@ -8,12 +8,12 @@ Programy vypracované během cvičení na předmětu ALG1/ALG2
 ### Dědičnost
 - Vazba is a
 - Circle is a Shape
-- extends
- - Můžeme dědit pouze z jedné třídy
+- **extends**
+- Můžeme dědit pouze z jedné třídy
 ### Implementace
 - Vazba implements
 - Circle implements Computable
-- implements
+- **implements**
 - Můžeme implementovat více rozhraní
 
 
@@ -31,3 +31,30 @@ public String toString() {
         return String.format("%s/%s", citatel, jmenovatel);
     }
 }
+```
+## Stream (soubory)
+ - vhodné najít takový, který nastavuje kódování
+
+### CSV
+    Jmeno, gitRep, Temp
+    Kulhavy, ----, cože
+    Petricek, ----, cože2
+
+``` java
+File f = new File("data/userDir");
+File f1 = new File("data/text.txt");
+```
+### Text
+ - READ
+   - BufferedReader
+     - nextLine
+   - Scanner
+     - nextLine
+     - tokeny
+ - WRITE
+   - PrintWriter
+   - BufferedWriter
+
+### Byte
+ - READ
+ - WRITE
