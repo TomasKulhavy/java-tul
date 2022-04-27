@@ -32,18 +32,20 @@ public String toString() {
     }
 }
 ```
+
 ## Stream (soubory)
  - vhodné najít takový, který nastavuje kódování
 
 ### CSV
-    Jmeno, gitRep, Temp
-    Kulhavy, ----, cože
-    Petricek, ----, cože2
+    Jmeno | gitRep | Temp
+    Kulhavy | ---- | cože
+    Petricek | ---- | cože2
 
 ``` java
 File f = new File("data/userDir");
 File f1 = new File("data/text.txt");
 ```
+
 ### Text
  - READ
    - BufferedReader
@@ -57,4 +59,6 @@ File f1 = new File("data/text.txt");
 
 ### Byte
  - READ
+   - DataInputStream
  - WRITE
+   - DataOutputStream
