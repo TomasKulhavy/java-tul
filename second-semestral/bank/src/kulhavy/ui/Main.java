@@ -31,8 +31,9 @@ public class Main {
             do {
                 try {
                     System.out.println("============================================");
-                    System.out.println("1 - Zapsat vklad");
-                    System.out.println("2 - Zapsat vydaj");
+                    System.out.println("1 - Zapsat transakci");
+                    System.out.println("2 - Vypis uctu");
+                    System.out.println("3 - Bilance uctu");
                     System.out.println("0 - Odhlasit se");
                     int temp = sc.nextInt();
 
@@ -52,12 +53,22 @@ public class Main {
                             }
                             break;
                         case 2:
-
+                            if (account != null) {
+                                account.getAccountInfo();
+                            }
+                            break;
+                        case 3:
+                            if (account != null) {
+                                account.getBillance();
+                            }
+                            break;
                         case 0:
                             System.out.println("Byli jste odhlášeni.");
                             quit = true;
+                            break;
                         default:
                             System.out.println("Nedefinovana akce!");
+                            break;
                     }
 
                 } catch (UnsupportedOperationException e) {

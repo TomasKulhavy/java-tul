@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.LocalDate;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Account {
@@ -30,14 +31,31 @@ public class Account {
         transaction.saveTransaction(bankAccount);
     }
 
-    public int getBankAccount() {
-        return bankAccount;
+    public void getBillance() {
+        double data = 0.0;
+        String[] line;
+
+        try {
+            File myObj = new File(bankAccount + ".txt");
+            Scanner myReader = new Scanner(myObj);
+            while (myReader.hasNextLine()) {
+                line = myReader.nextLine().split(",");
+                if(line.length > 1) {
+                    data += Double.parseDouble(line[1]);
+                }
+            }
+            System.out.println("Bilance uctu: " + data);
+            myReader.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
     }
 
-    public void getAccountInfo(Account account) {
+    public void getAccountInfo() {
         String data = "";
         try {
-            File myObj = new File(account.bankAccount + ".txt");
+            File myObj = new File(bankAccount + ".txt");
             Scanner myReader = new Scanner(myObj);
             while (myReader.hasNextLine()) {
                 data = myReader.nextLine();
@@ -53,6 +71,6 @@ public class Account {
     public static void main(String[] args) {
         Account tomas = new Account(1);
         tomas.addTransaction(LocalDate.now(), 4000.0);
-        tomas.getAccountInfo(tomas);
+        tomas.getAccountInfo();
     }
 }

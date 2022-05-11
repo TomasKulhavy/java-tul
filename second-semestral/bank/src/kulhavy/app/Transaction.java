@@ -18,13 +18,17 @@ public class Transaction {
             FileWriter myWriter = new FileWriter(bankAccount + ".txt", true);
             myWriter.write("\n" + date + "," + amount);
             myWriter.close();
-            System.out.println("Provedli jste transakci");
+            if (amount > 0) {
+                System.out.println("Provedli jste vklad");
+            } else if (amount < 0) {
+                System.out.println("Provedli jste vyber");
+            }
         } catch (IOException e) {
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
     }
-    
+
     public LocalDate getDate() {
         return date;
     }
