@@ -32,12 +32,12 @@ public class Racer implements Comparable<Racer> {
 
     // Vrátí počet sekund, za jak dlouho závodník uběhl závod;
     public long runTime() {
-        return finishTime.getSecondsTotal() - startTime.getSecondsTotal();
+        return finishTime.timeToSeconds() - startTime.timeToSeconds();
     }
 
     // Vrátí String se zformátovaným časem, za jaký závodník uběhl závod
     public String runTimeFormatted() {
-        long time = finishTime.getSecondsTotal() - startTime.getSecondsTotal();
+        long time = finishTime.timeToSeconds() - startTime.timeToSeconds();
         return TimeTools.longToString(time);
     }
 

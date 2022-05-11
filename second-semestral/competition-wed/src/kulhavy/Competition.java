@@ -1,5 +1,6 @@
 package kulhavy;
 
+import java.io.*;
 import java.text.Collator;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -11,6 +12,34 @@ public class Competition {
     
     private String name;
     private ArrayList<Racer> racers;
+
+    public void loadStart(File startFile) throws IOException {
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(startFile))) { // uzavření souboru automaticky s TRY WITH RESOURCES
+            String line, firstName, lastName;
+            int dob;
+            char gender;
+            String[] parts;
+            Racer r;
+
+            bufferedReader.readLine(); // přeskočení hlavičky
+            while ((line = bufferedReader.readLine()) != null) {
+                parts = line.split("[ ]+");
+                firstName = parts[0];
+                lastName = parts[1];
+                dob = Integer.parseInt(parts[2]);
+                gender = parts[3].charAt(0);
+                Gender genderEnum;
+
+                if (gender == 'm') {
+                    genderEnum = Gender.male;
+                } else {
+                    genderEnum = Gender.female;
+                }
+                r = new Racer(firstName, lastName, dob, genderEnum);
+                racers.add(r);
+            }
+        }
+    }
     
     public Competition(String name) {
         this.name = name;
@@ -109,5 +138,14 @@ public class Competition {
     public void sortByRunTimeLambda() {        
         Collections.sort(racers, (Racer o1, Racer o2) -> Long.compare(o1.runTime(), o2.runTime()));
     }
-    
+
+    public static void main(String[] args) {
+        Competition competition = new Competition("Run czech");
+        try {
+            competition.loadStart(new File("start"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        System.out.println(competition);
+    }
 }
