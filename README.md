@@ -62,3 +62,25 @@ File f1 = new File("data/text.txt");
    - DataInputStream
  - WRITE
    - DataOutputStream
+
+**REKURZE**
+
+*Převod do bináru*
+
+```java
+public static String mystery(int n) { //24
+	String s;
+	if(n <= 1) {
+		return String.valueOf(n);
+	}
+	s = mystery(n/2) + String.valueOf(n%2);
+	return s;
+}
+```
+***RETURN 11000***
+
+mystery(24) => mystery(12) return s = 1100 + 0 = 11000
+mystery(12) => mystery(6)  return s = 110 + 0 = 1100
+mystery(6)  => mystery(3)  return s = 11 + 0 = 110
+mystery(3)  => mystery(1)  return s = 1 + 1 = 11
+mystery(1)  => 		   return s = 1
